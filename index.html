@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>title</title>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
+		<script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+	    <link href="https://fonts.googleapis.com/css?family=Heebo|Permanent+Marker" rel="stylesheet">
+	</head>
+	<body>
+	<header>
+		<h2>Quizy-PWr</h2>
+		<nav>
+			<li>Strona główna</li>
+			<li>O nas</li>
+			<li>Zarejestruj</li>
+		</nav>
+	</header>
+	<section class="quizes">
+		<div class="quizes-container">
+			
+
+			<div class="quiz-card hidden">
+				<div class="quiz-card-image">
+				<img src="http://images.clipartpanda.com/math-book-clipart-pi577RkiB.jpeg" alt="">
+				</div>
+				<div class="quiz-card-body">
+					<h2 class="quiz-card-title">Matematyka</h2>
+					<p class="quiz-card-description">The best quiz in the world!</p>
+					<button type="button" class="quiz-card-button"><span>Przejdz do quizu </span></button> 
+				</div>
+			</div>
+			
+			<div class="quiz-card hidden">
+				<div class="quiz-card-image">
+				<img src="https://ciekawe.org/wp-content/uploads/2016/08/regergr.jpg" alt="">
+				</div>
+				<div class="quiz-card-body">
+					<h2 class="quiz-card-title">Wiedza ogólna</h2>
+					<p class="quiz-card-description">The best quiz in the world!</p>
+					<button type="button" class="quiz-card-button"><span>Przejdz do quizu </span></button> 
+				</div>
+			</div>
+			
+			<div class="quiz-card hidden">
+				<div class="quiz-card-image">
+				<img src="https://egarwolin.pl/static/files/ogloszenia/119/1525616405-chemia1.jpg" alt="">
+				</div>
+				<div class="quiz-card-body">
+					<h2 class="quiz-card-title">Chemia</h2>
+					<p class="quiz-card-description">The best quiz in the world!</p>
+					<button type="button" class="quiz-card-button"><span>Przejdz do quizu </span></button> 
+				</div>
+			</div>
+			
+			<div class="quiz-card hidden">
+				<div class="quiz-card-image">
+				<img src="http://thecsrjournal.in/wp-content/uploads/2017/04/Sports-I.jpg" alt="">
+				</div>
+				<div class="quiz-card-body">
+					<h2 class="quiz-card-title">Sport</h2>
+					<p class="quiz-card-description">The best quiz in the world!</p>
+					<button type="button" class="quiz-card-button"><span>Przejdz do quizu </span></button> 
+				</div>
+			</div>
+			
+			<div class="quiz-card hidden">
+				<div class="quiz-card-image">
+				<img src="http://www.hotelroomsearch.net/im/hotels/by/turist-2.jpg" alt="">
+				</div>
+				<div class="quiz-card-body">
+					<h2 class="quiz-card-title">Turystyka</h2>
+					<p class="quiz-card-description">The best quiz in the world!</p>
+					<button type="button" class="quiz-card-button"><span>Przejdz do quizu </span></button> 
+				</div>
+			</div>
+			
+			<div class="quiz-card hidden">
+				<div class="quiz-card-image">
+				<img src="https://musicaladvisors.com/wp-content/uploads/2018/04/Classical-Music-Wallpaper.jpg" alt="">
+				</div>
+				<div class="quiz-card-body">
+					<h2 class="quiz-card-title">Muzyka poważna</h2>
+					<p class="quiz-card-description">The best quiz in the world!</p>
+					<button type="button" class="quiz-card-button"><span>Przejdz do quizu </span></button> 
+				</div>
+			</div>
+			
+			
+		</div>
+	</section>
+	
+	<footer>
+  		<div>Copyright Reserved 2018 &#9400;</div>
+  			<div>
+  			<ul>
+  				<li><a href="?">Lorem ipsum dol</a></li>
+  				<li><a href="?">Lorem ipsum</a></li>
+  				<li><a href="?">Lorem ipsum dolor sit</a></li>
+  				<li><a href="?">Lorem ips</a></li>
+  				<li><a href="?">Lorem ipsum dolor</a></li>
+  			</ul>
+  			</div>
+  			<div>
+  			<ul>
+  				<li><a href="?">Lorem ipsum dolor</a></li>
+  				<li><a href="?">Lorem ipsum</a></li>
+  				<li><a href="?">Lorem ipsum dolor sit</a></li>
+  				<li><a href="?">Lorem.</a></li>
+  				<li><a href="?">Lorem ipsum dolor</a></li>
+  			</ul>
+  			</div>
+  	</footer>
+  	
+	</body>
+	
+	<script type="text/javascript">
+		$(function(){
+			let time=800;
+			//setTimeout(function(){
+			//	$(".quiz-card").removeClass("hidden");
+			//},$time);
+			var x = document.getElementsByClassName("quiz-card");
+			Array.from(x).forEach(function(el, index, arr){
+				setTimeout(function(){
+					el.classList.remove("hidden");
+				}, time);
+				time+=100;
+			});
+			
+			$(window).scroll(function() {
+			  if ($(document).scrollTop() > 30) {
+				$('header').addClass('shrink');
+			  } else {
+				$('header').removeClass('shrink');
+			  }
+			});
+			
+			
+		});
+	</script>
+	
+	
+</html>
