@@ -1,11 +1,9 @@
 *{
-<<<<<<< HEAD
 	margin:0;
 	padding:0;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-
 }
 
 header{
@@ -41,7 +39,6 @@ header.shrink{
 	background-color: rgb(64, 153, 255, 0.7);
 =======
 	box-sizing: border-box;
->>>>>>> df283f5b3f6455d954fc6118748628aea819531c
 }
 
 html{
@@ -64,7 +61,6 @@ div.quizes-container{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-<<<<<<< HEAD
 	margin-top:100px;
 
 }
