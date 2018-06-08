@@ -66,8 +66,7 @@ div.quizes-container{
 	justify-content: space-between;
 <<<<<<< HEAD
 	margin-top:100px;
-=======
->>>>>>> df283f5b3f6455d954fc6118748628aea819531c
+
 }
 
 div.quiz-card{
@@ -90,11 +89,8 @@ div.quiz-card{
 
 button.quiz-card-button{
 	padding:20px 40px 20px 40px;
-<<<<<<< HEAD
 	background-color: #149ACC;
-=======
 	background-color: #0c54a7;
->>>>>>> df283f5b3f6455d954fc6118748628aea819531c
 	border:0;
 	color: white;
 	border-radius: 3px;
@@ -145,8 +141,6 @@ button.quiz-card-button:hover span:after {
 .hidden{
 	opacity: 0;
 }
-<<<<<<< HEAD
-
 
 footer{
 	font-size: 12px;
@@ -176,5 +170,4 @@ footer ul li a{
 footer ul li a:hover{
 	text-decoration: underline;
 }
-=======
->>>>>>> df283f5b3f6455d954fc6118748628aea819531c
+
